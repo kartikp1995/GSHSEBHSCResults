@@ -2,4 +2,4 @@ GSHSEBHSCResults
 ================
 Hi there,
 This repository includes various python scripts for scrapping result of GSHSEB Board.
-First attempt of that is on 28/06/2014, HSC Science 2nd Sem Results.
+First attempt of that was on 28/06/2014, HSC Science 2nd Sem Results and COrresponding file name is Sem2Sci2014.py.
