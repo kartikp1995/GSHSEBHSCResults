@@ -2,22 +2,22 @@ from selenium import webdriver
 from bs4 import BeautifulSoup as bs
 from sys import argv
 
-script, start, end = argv
-start = int(start) 
+script, start, end = argv	#start as a argument for Starting Roll No and 'end' as a argument for ending Roll no
+start = int(start)
 end = int(end)
 
-baseurl = 'http://gseb.org/1510anitnegra/sem2/'
+baseurl = 'http://gseb.org/1510anitnegra/sem2/'		#baseurl. Given url may not be working. Open Frame in new tab and String before /B00/00/B000000.html
 
-f = open('results.txt', 'w')
-f.write('SeatNo Name Group Total MM Percentile SciencePercentile Grade Percentage\n')
+f = open('results.txt', 'w')				#Opening Output file.
+f.write('SeatNo Name Group Total MM Percentile SciencePercentile Grade Percentage\n') 	#Headers for Outputs.
 
 # end = 979738
 # start = 851001
 
-firstChar = 'B'
+firstChar = 'B'					#Change this to "A" for SSC Results
 errorNo = 0
 errNoList = []
-driver = webdriver.Firefox()
+driver = webdriver.Firefox()			#Open Firefox. Will be required to install Mozilla Firefox
 
 for num in xrange(start, end+1):
     try:
